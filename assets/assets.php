@@ -199,3 +199,6 @@ add_action('widgets_init', 'widget_menu_footer');
 /*modulos*/
 //modulo time line
 include get_template_directory() . '/assets/modulos/modulo-loop-timeline/core-loop-timeline.php';
+
+//modulo noticias
+include get_template_directory() . '/assets/modulos/modulo-noticias/core-noticias.php';
