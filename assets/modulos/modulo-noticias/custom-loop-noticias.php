@@ -7,7 +7,7 @@
 <div id="carrusel-reconocimiento" class="row d-flex justify-content-evenly">
   <h2 class="text-center">Noticias</h2>
 
-        <?php
+        <?php 
         $i = 0;
         $e = 0;
         $temp = $wp_query;
