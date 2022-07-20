@@ -5,7 +5,7 @@
 <!--Slider-->
 
 <div id="carrusel-reconocimiento" class="row d-flex justify-content-evenly">
-  
+  <h2 class="text-center">Noticias</h2>
 
         <?php
         $i = 0;
@@ -23,7 +23,7 @@
         $wp_query = new WP_Query($args);
         if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-   <div class="card" style="width: 18rem;">
+   <div class="card body-card" style="width: 18rem;">
   
   <figure class="card-img-top">
   <?php $img_carta = get_field( 'img_carta' ); ?>
@@ -32,10 +32,10 @@
 <?php endif; ?>
   </figure>
    
-  <div class="card-body justify-content-center ">
+  <div class="card-body  ">
     <h5 class="card-title"><?php the_field( 'titulo_carta' ); ?></h5>
     <p class="card-text"> <?php echo get_the_excerpt(); ?> </p>
-   <button class="btn btn-primary "><a href="#" class="">Go somewhere</a></button> 
+   <button class="btn b-btn "><a href="#" class="">Ver más</a></button> 
   </div>
 </div>
 
